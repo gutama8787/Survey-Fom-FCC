@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/*html, body{
+}*/
+body{
+    width: 
+}
+header, p{
+    text-align: center;
+}
+form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+label.labels{
+    display: block;
+}
+.inputs{
+    display: block;
+    width: 50%;
+}
+input[type=text],input[type=email],input[type=number]{
+    width: 100%;
+    padding: .3em;
+}
+@media screen and (min-width: 400px) and (max-width: 768px){
+    form{
+        background-color: antiquewhite;
+    }
+    form{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .container{
+        max-width: 60%;
+        padding: .7em;
+        font-size: .9em;
+        background-color: rebeccapurple;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 768px){
+    form{
+        max-width: 50%;
+        padding: 1em;
+        background-color: aqua;
+    }
+    .container{
+        display: flex;
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: .3em;
+    }
+    .labels{
+       width: 30%;
+       max-width: 30%;
+    }
+    .inputs{
+        width: 50%;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survery Form</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <p id="description">Fill out this survey before you join the class.!</p>
+        <form action="" id="survey-form">
+            <!--name, email, and age-->
+            <div class="name container">
+                <label class="labels" for="name" id="name-label">Name: </label>
+                <input class="input" type="text" id="name" placeholder="You name" required>
+            </div>
+            <div class="email container">
+                <label class="labels" for="email" id="email-label">Email: </label>
+                <input class="input" type="email" id="email" placeholder="You email" required>
+            </div>
+            <div class="age container">
+                <label class="labels" for="age" id="number-label">Age: </label>
+                <input class="input" type="number" name="age" id="number" max="98" min="18" placeholder="your age" required>
+            </div>
+            <!--drop down form-->
+            <div class="drop container">
+                <label class="labels" for="courses">Courses you have taken</label>
+                <div class="inputs">
+                    <select name="courses" id="dropdown">
+                        <option value="phil101">Intro to philosophy</option>
+                        <option value="Eng101">English 101</option>
+                        <option value="Psych">Psychology 101</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+            </div>
+            <!--radio -->
+            <div class="radio container">
+                <div class="radio-label labels">
+                    <label for="reading">Currently how much do you read: </label>
+                </div>
+                <div class="read-choice inputs">
+                    <div> <input type="radio" name="length" id="everyday" value="everyday"> <label for="everyday">I
+                            read everyday </label></div>
+                    <div> <input type="radio" name="length" id="often" value="everyday"> <label for="often">I read
+                            often </label></div>
+                    <div> <input type="radio" name="length" id="never" value="everyday"> <label for="never"></label> I
+                        don't read at all</label></div>
+                </div>
+            </div>
+            <!--checkbox-->
+            <div class="checkbox container">
+                <label class="labels" for="favorite"> Who is your favorite author.</label>
+                <div class="inputs">
+                   <div ><label for="john">  <input type="checkbox" name="john" id="john" value="john"> John Green</label></div> 
+                   <div> <label for="sam"> <input type="checkbox" name="sam" id="sam" value="sam"> Sam Harris </label></div> 
+                  <div><label for="hank"><input type="checkbox" name="hnk" id="hnk" value="hank"> Hank Green </label></div>  
+                </div>
+            </div>
+            <!--suggestion: textaria-->
+            <div class="container">
+                <label class="labels" for="suggestion">Why are joining this course?</label>
+                <div class="inputs"><textarea name="suggestion" id="sgst" cols="30" rows="10"></textarea></div>
+            </div>
+            <div class="container">
+                <input type="submit" name="submit" id="submit" value="submit">
+            </div>
+        </form>
+    </main>
+</body>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</html>
